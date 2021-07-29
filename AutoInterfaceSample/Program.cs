@@ -1,4 +1,28 @@
-﻿using TestInterfaces;
+﻿using TestInterfaces.A.B;
+
+namespace TestInterfaces.Base
+{
+    public interface ITestable
+    {
+        void PrintTest();
+    }
+}
+
+namespace TestInterfaces.A.B
+{
+    public interface IPrintable<T> : ITestable
+    {
+        int Length { get; }
+        int Count { get; }
+        void Print1();
+        void Print2();
+    }
+
+    public interface IPrintable2
+    {
+        void Print3();
+    }
+}
 
 namespace AutoInterfaceSample
 {
