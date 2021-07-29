@@ -1,4 +1,5 @@
 ﻿using TestInterfaces.A.B;
+using TestInterfaces.Base;
 
 namespace TestInterfaces.Base
 {
